@@ -9,7 +9,6 @@
 @media only screen and (max-width: 820px){
     .header-preview h1,p, .btn-header{
         text-align: center;
-        margin-top: 0
     }
     
     
@@ -19,6 +18,10 @@
     
     .header-preview p, a{
         font-size: 18px;
+    }
+    
+    .header-preview{
+        margin-top: 13%;
     }
     
 /*Mobile menu*/
@@ -75,13 +78,16 @@
         padding-bottom: 50px;
         display: -webkit-box;
         display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
+                -webkit-flex-direction: row;
                 flex-direction: row;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
+                -webkit-justify-content: center;
                 justify-content: center;
     }
 
@@ -93,5 +99,8 @@
         float: left;
         margin-right: 10px;
     }
-
+    
+    .first_slides{
+        display: none;
+    }
 }
