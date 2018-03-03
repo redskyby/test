@@ -1,0 +1,22 @@
+@media only screen and (max-width: 992px) {
+    .heading-our-products::after{
+        content: "";
+        display: none;
+    }
+    
+    .meet-our-team::after{
+        content: "";
+        display: none;
+    }
+    
+    .contac p::after{
+        content: "";
+        display: none;
+    }
+    .social-media{
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
