@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    * {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+    background: red;
+ background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+}
+</style>
+</head>
+<body>
+    <canvas  id="canvas"></canvas>
+
+
+<script>
+   var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+var x, y, radius = 10;
+
+canvas.width = window.innerWidth;
+canvas.height= window.innerHeight;
+
+
+canvas.addEventListener('mousedown', function(e){
+  // В функции обработчике клика мы только устанавливаем координаты центра
+  x = e.clientX;
+  y = e.clientY;
+  // и запускаем анимацию
+  drawCircle();
+});
+
+// А эта функция пусть рисует круг.
+// Если передавать эту функцию в requestAnimationFrame, 
+// то её аргументом будет время, прошедшее с прошлого вызова, а не event click
+function drawCircle(dt){
+    gradient = ctx.createLinearGradient(100, 100, 750, 350);
+    gradient.addColorStop(0, "#a8c0ff");
+    gradient.addColorStop(1, "#3f2b96");
+    ctx.fillStyle = gradient;
+    
+    
+  ctx.beginPath();
+  ctx.arc(x, y, radius, 0 , Math.PI * 2);
+  ctx.closePath();
+  ctx.fill();
+  radius += 3;
+  if (radius > 150) {
+    ctx.clearRect(0,0, canvas.width, canvas.height);
+    radius = 0;
+    return;
+  }
+  requestAnimationFrame(drawCircle);
+}
+    </script>
+</body>
+</html>
