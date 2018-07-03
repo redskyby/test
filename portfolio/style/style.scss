@@ -185,6 +185,53 @@ header{
 }
     
 
+/*Team news*/
 
+.ourNews p{
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif; 
+    
+}
+
+
+.background-item1{
+    background: #222222;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ourNews-items{
+    margin: 0px 5%;
+}
+
+
+.ourNews-images1 {
+  background: url(../img/88.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 500px; }
+
+.ourNews-images2 {
+  background: url(../img/90.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 550px;
+  max-width: 555px;
+  width: 100%;
+  height: 500px; }
+
+.background-item2{
+    background: #f3f3f3;
+    color: #5a5a5a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
