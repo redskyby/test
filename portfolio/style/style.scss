@@ -234,4 +234,66 @@ header{
     justify-content: center;
 }
 
+/*Blog teams*/
 
+.blog{
+    background: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+    .blogLogo{
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items:center;
+        margin-bottom: 20px;
+        img{
+            height: 116px;
+            width: 116px;
+        }
+        h2{
+            position: absolute;
+            top: 32%;
+        }
+    }
+}
+
+.blogLogo-text{
+    font: 30px 'Roboto', sans-serif;
+}
+
+.blog-item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    p{
+        text-align: left;
+    }
+    h3{
+        text-transform: uppercase;
+        font-size: 18px;
+        margin: 20px 0;
+        color:$blueColor;
+        text-align: center;
+    }
+    img{
+        width: 270px;
+        height: 270px;
+    }
+    img:hover{
+        border: 1px solid black;
+        opacity: 0.5;
+    }
+}
+
+
+/*Mail*/
+.mail{
+    width: 100%;
+    background-image: url(../img/97.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
