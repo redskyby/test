@@ -8,4 +8,13 @@ var square = document.getElementById('square')
             } else{
                 square.style.display = "block";
             };
-}
+};
+
+var hambyrger = document.getElementById("hambyrger"); 
+ 
+hambyrger.addEventListener("click", menu, false ) ;
+
+ function menu() {
+    var nav = document.getElementById("mobile-nav"); 
+    nav.classList.toggle("mobile-menu");
+ }

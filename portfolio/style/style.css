@@ -4,16 +4,6 @@
   padding: 0; }
 
 /*animation*/
-@-webkit-keyframes identifier {
-  0% {
-    vertical-align: 70%;
-    opacity: 0; }
-  50% {
-    vertical-align: 0;
-    opacity: 0.5; }
-  100% {
-    vertical-align: -120%;
-    opacity: 1; } }
 @keyframes identifier {
   0% {
     vertical-align: 70%;
@@ -56,6 +46,9 @@ h3 {
     text-decoration: none;
     color: #808080; }
 
+.mobile {
+  display: none; }
+
 /*HEADER*/
 header {
   width: 100%;
@@ -65,15 +58,8 @@ header {
   background-size: cover; }
 
 .header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: relative; }
   .header-nav li {
@@ -111,15 +97,8 @@ header {
   margin-top: 5%;
   text-transform: uppercase;
   color: #C0C0C0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
   .header-caption p {
     color: #11749e;
@@ -128,24 +107,13 @@ header {
 .scroll-down {
   color: #c0c0c0;
   font-size: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin-top: 20%; }
 
 .arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 10px; }
   .arrow a {
@@ -160,7 +128,6 @@ header {
   .arrow i {
     color: #fff;
     font-size: 25px;
-    -webkit-animation: identifier 3s linear infinite;
     animation: identifier 3s linear infinite; }
 
 /*Our advantages*/
@@ -171,11 +138,7 @@ header {
 
 .ourAdvantages-logo {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center; }
   .ourAdvantages-logo h2 {
     position: absolute;
@@ -207,15 +170,8 @@ header {
 .background-item1 {
   background: #222222;
   color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center; }
 
 .ourNews-items {
@@ -244,15 +200,8 @@ header {
 .background-item2 {
   background: #f3f3f3;
   color: #5a5a5a;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center; }
 
 /*Blog teams*/
@@ -263,20 +212,10 @@ header {
   .blog .blogLogo {
     position: relative;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-line-pack: center;
     align-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 20px; }
     .blog .blogLogo h2 {
@@ -287,17 +226,9 @@ header {
   font: 30px 'Roboto', sans-serif; }
 
 .blog-item1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
   align-content: center; }
   .blog-item1 p {
     text-align: left; }
@@ -354,15 +285,8 @@ header {
   background-repeat: no-repeat; }
 
 .header-mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: relative;
   margin: 30px 0;
@@ -383,21 +307,26 @@ header {
 .mail-form input {
   width: 100%;
   height: 30px;
-  margin: 30px 0;
+  margin: 20px 0;
   padding: 20px 20px;
   font: 15px 'Roboto', sans-serif;
   background: rgba(255, 245, 215, 0);
   border: 1px solid #fff;
   color: #fff; }
+  .mail-form input:hover {
+    border: 1px solid #6495ED; }
 .mail-form textarea {
   width: 100%;
   height: 90px;
   resize: none;
+  margin-top: 20px;
   background: rgba(255, 245, 215, 0);
   border: 1px solid #fff;
   color: #fff;
   padding: 20px 15px;
   overflow: auto; }
+  .mail-form textarea:hover {
+    border: 1px solid #6495ED; }
 .mail-form button {
   display: block;
   text-align: center;
@@ -417,9 +346,7 @@ footer {
   background: #222222;
   color: #ffffff;
   font: 15px 'Roboto', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
+
+/*# sourceMappingURL=style.css.map */

@@ -66,6 +66,10 @@ h3{
     }
 }
 
+//mobile menu
+.mobile{
+    display: none;
+}
 /*HEADER*/
 header{
     width: 100%;
@@ -83,7 +87,6 @@ header{
     li{
         display: block;
         list-style-type: none;
-         
         padding: 10px 20px;
     }
     
@@ -378,22 +381,29 @@ header{
     input {
         width: 100%;
         height: 30px;
-        margin: 30px 0;
+        margin: 20px 0;
         padding: 20px 20px;
         font: 15px 'Roboto', sans-serif;
         background: rgba(255,245,215,0);
         border: 1px solid #fff;
         color: #fff; 
+        &:hover{
+            border: 1px solid #6495ED;
+        }
     }
     textarea{
         width: 100%;
         height: 90px;
         resize: none;
+        margin-top: 20px;
         background: rgba(255,245,215,0);
         border: 1px solid #fff;
         color: #fff; 
         padding: 20px 15px;
         overflow: auto;
+        &:hover{
+            border: 1px solid #6495ED;
+        }
     }
     button{
         display:block;
@@ -408,6 +418,7 @@ header{
         cursor: pointer;
     }
 }
+
 
 /*footer*/
 footer{
