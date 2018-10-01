@@ -166,6 +166,7 @@ header{
     font-family: 'Open Sans', sans-serif;
     background: #edeef8;
     color: #8184a1;
+    width: 100%;
     ul{
         display: flex;
         justify-content: flex-start;
@@ -176,6 +177,7 @@ header{
             &:hover , &:hover>a{
                 color: #fff;
                 background: #8184a1;
+                border-radius: 5px;
             }
         }
         a{
@@ -183,11 +185,22 @@ header{
             font-size: 13px;
             text-transform: uppercase;
             color: #8184a1;
-            &::after , &::before{
+            &::after {
                 backface-visibility: hidden;
                 border: 1px solid rgba(#fff, 0);
-                 position: relative;
-                bottom: -5px;
+                position: relative;
+                bottom: -10px;
+                content: "";
+                display: block;
+                margin: 0 auto;
+                transition: all 280ms ease-in-out;
+                width: 0;
+            }
+            &::before{
+                backface-visibility: hidden;
+                border: 1px solid rgba(#fff, 0);
+                position: relative;
+                top: -10px;
                 content: "";
                 display: block;
                 margin: 0 auto;
@@ -196,20 +209,34 @@ header{
             }
             &:hover::after,&:hover::before{
                 backface-visibility: hidden;
-                border-color: #FFCA28;
+                border-color: #ffa000;
                 transition: width 350ms ease-in-out;
                 width: 70%;
             }
             &:hover::before{
                 bottom: auto;
-                top: -5px;
+                top: -10px;
                 width: 70%;
             }
         }
     }
 }
+//aside
+aside{
+    width: 30%;
+    height: 600px;
+    background: grey;
+    float: left;
+}
+///main
 
-.qwer{
-    @include display-flex;
-    @include flex-direction(row);
+.tab-pane {
+  padding: 20px;
+  background: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+  display: none;
+}
+.tab-open {
+  display: block;
 }
