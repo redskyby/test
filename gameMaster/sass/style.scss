@@ -1,4 +1,9 @@
-@import "compass/css3";
+
+@import "compass";
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -221,15 +226,21 @@ header{
         }
     }
 }
+//center content
+.content{
+    display: flex;
+    flex-direction: row;
+    align-content: center
+}
 //aside
 aside{
-    width: 30%;
     height: 600px;
     background: grey;
-    float: left;
+    flex-grow:3;
 }
 ///main
 
+//TABS
 .tab-pane {
   padding: 20px;
   background: #f7f7f9;
@@ -239,4 +250,31 @@ aside{
 }
 .tab-open {
   display: block;
+}
+.tabs_content{
+    background: grey;
+    flex-grow:9;
+}
+//SLIDER
+.slider-sprite, .slider-sprite_item1, .slider-sprite_item2, .slider-sprite_item3 {
+  background-image: url('../img/slider.jpg');
+  background-repeat: no-repeat;
+}
+
+.slider-sprite_item1 {
+  background-position: 0 0;
+  width: auto;
+  height: 300px;
+}
+
+.slider-sprite_item2 {
+  background-position: 0 -304px;
+  width: auto;
+  height: 300px;
+}
+
+.slider-sprite_item3 {
+  background-position: 0 -608px;
+  width: auto;
+  height: 300px;
 }
