@@ -271,10 +271,18 @@ header {
 aside {
   height: 600px;
   background: grey;
-  flex-grow: 3;
+  width: 30%;
 }
 
 /* line 244, ../sass/style.scss */
+.tabs_content {
+  background: red;
+  width: 70%;
+  float: right;
+  height: 600px;
+}
+
+/* line 251, ../sass/style.scss */
 .tab-pane {
   padding: 20px;
   background: #f7f7f9;
@@ -283,34 +291,41 @@ aside {
   display: none;
 }
 
-/* line 251, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .tab-open {
   display: block;
 }
 
-/* line 254, ../sass/style.scss */
-.tabs_content {
-  background: grey;
-  flex-grow: 9;
-}
-
-/* line 259, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .slider {
   position: relative;
+  width: auto;
+  height: 300px;
 }
 
-/* line 263, ../sass/style.scss */
-.mySlider {
-  display: none;
+/* line 270, ../sass/style.scss */
+.sliderFabe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 2s;
 }
 
-/* line 267, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
+.Showing {
+  opacity: 1;
+}
+
+/* line 285, ../sass/style.scss */
 #prew, #next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -5%;
   padding: 15px;
   color: #fff;
   font-size: 40px;
@@ -318,26 +333,12 @@ aside {
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* line 279, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 #next {
   right: 0;
 }
 
-@keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-/* line 287, ../sass/style.scss */
-.fabe {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-/* line 292, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 .slider_text {
   color: #f2f2f2;
   font-size: 15px;
@@ -348,7 +349,7 @@ aside {
   text-align: center;
 }
 
-/* line 302, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .numberText {
   color: #f2f2f2;
   font-size: 12px;
@@ -357,27 +358,27 @@ aside {
   top: 0;
 }
 
-/* line 310, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .slider-sprite, .slider-sprite_item1, .slider-sprite_item2, .slider-sprite_item3 {
   background-image: url("../img/slider.jpg");
   background-repeat: no-repeat;
 }
 
-/* line 315, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 .slider-sprite_item1 {
   background-position: 0 0;
   width: auto;
   height: 300px;
 }
 
-/* line 321, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 .slider-sprite_item2 {
   background-position: 0 -304px;
   width: auto;
   height: 300px;
 }
 
-/* line 327, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .slider-sprite_item3 {
   background-position: 0 -608px;
   width: auto;
