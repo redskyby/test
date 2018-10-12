@@ -234,9 +234,11 @@ header{
 }
 //aside
 aside{
+    box-sizing: border-box;
     height: 600px;
-    background: grey;
+    background: #f7f7f9;
     width: 30%;
+    
 }
 ///main
 
