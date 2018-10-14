@@ -22,7 +22,9 @@ function formNOTfocus(){
 
 
 //TABS/
-var tabsLink = document.querySelectorAll('.nav-tabs a');
+var tabsLink = document.querySelectorAll('.tab');
+
+var tabLI = document.querySelectorAll('.nav-tabs li');
 var tabsElement = document.querySelectorAll('.tab-pane');
 var i;
 
@@ -34,8 +36,11 @@ var showTabs = function(e) {
   for (i = 0; i < targetElement.length; i++) {
     if (targetElement[i].classList.contains('tab-open')) {
       return false;
-    } else targetElement[i].classList.add('tab-open');
+    } else {targetElement[i].classList.add('tab-open');
+           }
   }
+   
+
 
   targetElement = document.querySelectorAll(".tab-pane.tab-open:not("+ this.getAttribute('href')+")");
   for (i = 0; i < targetElement.length; i++) {
@@ -47,6 +52,13 @@ var showTabs = function(e) {
 for (i = 0; i < tabsLink.length; i++) {
   tabsLink[i].addEventListener('click', showTabs);
 }
+ function oil(e){
+    console.log('1')
+}
+for (i = 0; i < tabsLink.length; i++) {
+  tabLI[i].addEventListener('click' , oil);
+}
+
 
 //Slider  
 var slides = document.querySelectorAll('.sliderFabe');

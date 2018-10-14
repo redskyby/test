@@ -235,17 +235,42 @@ header{
 //aside
 aside{
     box-sizing: border-box;
-    height: 600px;
     background: #f7f7f9;
-    width: 30%;
-    
+    width: 25%;
+    padding: 10px 30px 0 30px;
 }
+.nav_aside{
+    text-align: left;
+    h3{
+        font-size: 18px;
+        font-weight: 600;
+        color: #575b71;
+    }
+    ul{
+        display: block;
+        li{
+            list-style: none;
+             padding: 7px 32px 7px 11px;
+            border: 1px solid #575b71;
+            border-radius: 4px;
+            &:not(:last-child){
+                margin-bottom: 2px;
+            }
+            a{
+               color: #575b71;
+               font-weight: 400;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
 ///main
 
 //TABS
 .tabs_content{
     background: #ffffff;
-    width: 70%;
+    width: 75%;
     float: right;
     height: auto;
 }
