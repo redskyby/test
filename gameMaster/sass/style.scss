@@ -1,5 +1,5 @@
 
-@import "compass";
+@import "compass";  
 
 $grey : #dee0ee;
 $orange : #f88131;
@@ -23,6 +23,17 @@ $orange : #f88131;
     box-shadow: inset 0 0 20px #F072B6, 0 0 100px #F072B6;
   }
 }
+h1{
+    font-size: 24px;
+    color: #575b71;
+}
+h2, h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #575b71;
+    line-height: 1.1;
+}
+
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -92,10 +103,15 @@ header{
 }
 
 .header_logo{
-   img{
-       height: auto;
-        width: 100%;
-        max-width: 232px;
+    .logo-sprite{
+    background-image:url('../img/logo.png');
+    background-repeat:no-repeat;    
+    }
+   .logo_header{
+       background-position:0 0; 
+       width: 232px;
+       height: 111px;
+       background-size: cover;
     }
 }
 
@@ -353,7 +369,7 @@ aside{
   display: block;
 }
 
-//SLIDER
+//SLIDER CONTENT TAB 0
 .slider{
     position: relative;
     width: auto;
@@ -502,3 +518,44 @@ aside{
   width: auto;
   height: 300px;
 }
+
+.tab0_content{
+    padding: 20px 0px 10px 0px;
+}
+
+.tab0_content_text{
+    margin: 10px  0 5px 0;
+    color: #575b71;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8184a1;
+    text-align: left;
+    line-height: 1.3;
+    li{
+        margin-left: 10px;
+    }
+}
+
+//FOOTER
+footer{
+}
+.logo-sprite{
+    background-image:url('../img/logo.png');
+    background-repeat:no-repeat;    
+}
+
+.logo_footer{
+    background-position: 0 -489px;
+    width: 265px;
+    height: 129px;
+    background-size: auto;
+}
+
+
+
+
+
+
+
+
