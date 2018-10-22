@@ -539,6 +539,11 @@ aside{
 
 //FOOTER
 footer{
+    height: 900px;/*THII'S DELITE*/
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-around;
 }
 .logo-sprite{
     background-image:url('../img/logo.png');
