@@ -539,11 +539,12 @@ aside{
 
 //FOOTER
 footer{
-    height: 900px;/*THII'S DELITE*/
     display: flex;
     flex-direction: row;
     text-align: left;
     justify-content: space-around;
+    padding: 20px 0 20px 0;
+    background: #8184a1
 }
 .logo-sprite{
     background-image:url('../img/logo.png');
@@ -558,7 +559,26 @@ footer{
 }
 
 
-
+.footer_item{
+    h3{
+        margin: 10px 0 10px 0;
+    }
+    li{
+        list-style: none;
+        a{
+            color: #575b71;
+            font: 13px/22px Open Sans;
+            &:hover{
+                color: $orange ;
+                text-decoration: none;
+            }
+        }
+    }
+    p{
+        font: 13px Open Sans;
+        margin: 20px 0 20px 0;
+    }
+}
 
 
 
