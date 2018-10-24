@@ -112,6 +112,7 @@ header{
        width: 232px;
        height: 111px;
        background-size: cover;
+       transform: scale(1.2);
     }
 }
 
@@ -544,7 +545,8 @@ footer{
     text-align: left;
     justify-content: space-around;
     padding: 20px 0 20px 0;
-    background: #8184a1
+    background:#c7c9d1;
+    border-top: 6px solid #a9c6ff;
 }
 .logo-sprite{
     background-image:url('../img/logo.png');
