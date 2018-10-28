@@ -28,7 +28,7 @@ var tabLI = document.querySelectorAll('.nav-tabs li');
 var tabsElement = document.querySelectorAll('.tab-pane');
 var i;
 
-tabsElement[0].classList.add('tab-open');
+tabsElement[2].classList.add('tab-open');
 
 var showTabs = function(e) {
   e.preventDefault();
