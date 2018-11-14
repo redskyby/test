@@ -23,7 +23,7 @@ function formNOTfocus(){
 //search RegExp
 var input = document.getElementById('input');
 var bab_number = document.querySelector(".header_form_search_error");
-var pattern = /^[a-zA-Z-А-Яа-\d+$-\w-яЁё\s]+$/i;
+var pattern =  /^[a-z0-9-А-Яа-я]+$/i;
 var value;
 
 input.addEventListener("input", search_error );

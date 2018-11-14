@@ -132,14 +132,14 @@ header{
         color: #b32868;
         background: $grey;
         border-radius:5px;
-        padding: 0 10px 0 10px;
+        padding: 5px 10px 5px 10px;
         height: 60px;
         display: flex;
         fleX-direction:column;
         justify-content: center;
         align-items:flex-start;
         position: absolute;
-        top: 120%;
+        top: 130%;
         display: none;
         .error_text{
             position: relative;
@@ -147,13 +147,13 @@ header{
                   content:"";
                   position: absolute;
                   left: 10px;
-                  bottom: 150%;
+                  bottom: 122%;
                   border: 10px solid transparent; 
                   border-bottom: 10px solid  #D32F2F;
                     }
                 &::after{
                   border-bottom: 10px solid $grey;
-                  bottom:140%;
+                  bottom:120%;
                 }
         }
     }
