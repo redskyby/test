@@ -20,6 +20,24 @@ function formNOTfocus(){
    document.getElementById('header_button').classList.remove('animation_button');
 };
 
+//search RegExp
+var input = document.getElementById('input');
+var bab_number = document.querySelector(".header_form_search_error");
+var pattern = /^[a-zA-Z-А-Яа-\d+$-\w-яЁё\s]+$/i;
+var value;
+
+input.addEventListener("input", search_error );
+
+function search_error(value) {
+   var  newValye = this.value;
+  if(pattern.test(newValye)){
+        bab_number.style.display= "none"
+  }else{
+    bab_number.style.display= "block"
+  }
+};
+
+
 
 //TABS/
 var tabsLink = document.querySelectorAll('.tab');

@@ -23,7 +23,11 @@
 <!--          FORM-->
             <form action="#" method="post" class="header_form">              
               <i class="fab fa-searchengin search_icon " id="search"></i>
-               <input type="text" placeholder="Поиск по товарам,брендам,категориям" maxlength="50" id="input" role="search" >
+               <input type="text" placeholder="Поиск по товарам,брендам,категориям" maxlength="50" id="input"  role="search" >
+               <div class="header_form_search_error">
+                   <p class="error_text">Вы ввели недопустимые символы.</p>
+                   <p>/ * # $ ~ @</p>
+               </div>
                <button type="submit" id="header_button">Найти</button>
            </form>
            <div class="header_info">
@@ -624,7 +628,7 @@
             </p>
            </div>
    </footer>
-</div>           
+</div>        
             <script src="./js/app.js"></script>
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa8TPfTJkpjYJENe6vA38f5rHzkaOMd6s&callback=initMap"
   type="text/javascript"></script>
