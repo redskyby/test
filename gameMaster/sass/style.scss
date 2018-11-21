@@ -593,9 +593,9 @@ aside{
             height: 120px;
             background: #000;
             transform: rotate(45deg);
-            transition: .5s eease-out;
+            transition: all 0.5s ease-out;
             overflow: hidden;
-            opacity: 0.5;
+            opacity: 0.4;
             &:hover{
                 opacity: 1;
             }
