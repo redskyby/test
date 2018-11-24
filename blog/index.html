@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Блог с gooogle-map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,500i|Nunito+Sans|Work+Sans" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style/bt.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="header-logo">
+                        <img src="./img/logo.png" alt="Рога и копыта">
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <nav>
+                        <ul class="header-nav">
+                            <li ><a href="#" class="active">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Process</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 col-md-push-6">
+                     <div class="header-preview">
+                          <h1>We Design and Develop</h1>
+                          <p>We are a new design studio based in USA. We have over 
+                            20 years of combined experience, and know a thing or two 
+                            about designing websites and mobile apps.</p>
+                            <div class="btn-header">
+                              <a href="#">Contact Us</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </header>
+    <section class="About_us">
+        <div class="container-fluid">
+            <div class="row">
+                <h2>About Us</h2>
+                <p>Divide have don't man wherein air fourth. Own itself make have night won't make. 
+                A you under Seed appear which good give. Own give air without fowl moveth dry first 
+                heaven fruit, dominion she'd won't very all.
+                </p>
+                <img src="./img/signature.png" alt="#">
+            </div>
+        </div>
+    </section>
+    <div class="our_advantages">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                   <div class="item_our_advantages">
+                        <div class="sprite pe-7s-portfolio"></div>
+                        <p>548<br>
+                            PROJECTS COMPLETED
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="item_our_advantages">
+                        <div class="sprite pe-7s-clock "></div>
+                        <p>1465<br>WORKING HOURS</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="item_our_advantages">
+                        <div class="sprite pe-7s-star1 "></div>
+                        <p>612<br>POSITIVE FEEDBACKS</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="item_our_advantages">
+                        <div class="sprite pe-7s-like"></div>
+                        <p>735<br>HAPPY CLIENTS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    mobile_our_advantages-->
+    <div class="mobile_our_advantages">
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mobile_item_our_advantages">
+                        <div class="sprite pe-7s-portfolio align_sprite"></div>
+                        <p>548<br>
+                            PROJECTS COMPLETED
+                        </p>
+                    </div>
+                   <div class="mobile_item_our_advantages">
+                        <div class="sprite pe-7s-clock align_sprite"></div>
+                        <p>1465<br>WORKING HOURS</p>
+                    </div>
+                   <div class="mobile_item_our_advantages">
+                        <div class="sprite pe-7s-star1 align_sprite"></div>
+                        <p>612<br>POSITIVE FEEDBACKS</p>
+                    </div>
+                   <div class="mobile_item_our_advantages">
+                        <div class="sprite pe-7s-like align_sprite"></div>
+                        <p>735<br>HAPPY CLIENTS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="first_slides">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                      <ul id="slides">
+                            <li class="slide showing"></li>
+                            <li class="slide"></li>
+                            <li class="slide"></li>
+                      </ul>
+                      <div class="buttons">
+                        <button class="controls" id="previous">&lt;</button>
+<!--                        <button class="controls" id="pause">&#10074;&#10074;</button>-->
+                        <button class="controls" id="next">&gt;</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+  <script src="js/app.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAVYx8laBrb2wKpR7K1DL9w9rrWTHsF3Fs &callback=initMap">
+    </script>
+</body>
+</html>
