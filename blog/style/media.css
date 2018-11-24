@@ -1,0 +1,106 @@
+@media only screen and (max-width: 1000px){
+    .header-logo {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 820px){
+    .header-preview h1,p, .btn-header{
+        text-align: center;
+    }
+    
+    
+    h1{
+        font-size: 24px;
+    }
+    
+    .header-preview p, a{
+        font-size: 18px;
+    }
+    
+    .header-preview{
+        margin-top: 13%;
+    }
+    
+/*Mobile menu*/
+     .header-nav{
+            display: block;
+            text-align: right;
+        }
+        
+        .header-nav li:not(:last-child){
+            margin-right: 0;
+        }
+        
+        .header-nav{
+            margin-right: 20px;
+        }
+    
+    
+    
+   /*mobile_our_advantages*/ 
+    .our_advantages{
+         display: none;
+    }
+     
+     .sprite { 
+         background: url('../img/index.png') no-repeat top left;  
+    } 
+
+
+    .pe-7s-portfolio{
+         background-position: -90px 0px; width: 40px; height: 36px;
+         margin-top: 4%;
+    }
+
+    .pe-7s-clock { 
+         background-position: 0px 0px; width: 40px; height: 40px;  
+         margin-top: 4%;
+    } 
+
+    .pe-7s-star1 { 
+        background-position: -135px 0px; width: 44px; height: 41px;  
+        margin-top: 2%;
+    } 
+
+    .pe-7s-like { 
+        background-position: -45px 0px; width: 40px; height: 36px; 
+
+    }
+    
+    .mobile_our_advantages{
+        background: #10c9c3;
+        color: #f8f9f9;
+        font: 14px Montserrat, sans-serif;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                -webkit-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+    }
+
+    .mobile_item_our_advantages:not(:last-child){
+        margin-bottom: 17px;
+    }
+    
+    .align_sprite{
+        float: left;
+        margin-right: 10px;
+    }
+    
+    .first_slides{
+        display: none;
+    }
+}
