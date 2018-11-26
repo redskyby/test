@@ -1,2 +1,6 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+*.RB
+*.gitignore
